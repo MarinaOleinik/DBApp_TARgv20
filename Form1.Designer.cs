@@ -39,7 +39,11 @@
             this.filebox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.addbtn = new System.Windows.Forms.Button();
+            this.updatebtn = new System.Windows.Forms.Button();
+            this.delbtn = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -144,11 +148,45 @@
             this.addbtn.UseVisualStyleBackColor = true;
             this.addbtn.Click += new System.EventHandler(this.addbtn_Click);
             // 
+            // updatebtn
+            // 
+            this.updatebtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.updatebtn.Location = new System.Drawing.Point(405, 330);
+            this.updatebtn.Name = "updatebtn";
+            this.updatebtn.Size = new System.Drawing.Size(141, 49);
+            this.updatebtn.TabIndex = 11;
+            this.updatebtn.Text = "Uuenda";
+            this.updatebtn.UseVisualStyleBackColor = true;
+            this.updatebtn.Click += new System.EventHandler(this.updatebtn_Click);
+            // 
+            // delbtn
+            // 
+            this.delbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.delbtn.Location = new System.Drawing.Point(552, 330);
+            this.delbtn.Name = "delbtn";
+            this.delbtn.Size = new System.Drawing.Size(141, 49);
+            this.delbtn.TabIndex = 12;
+            this.delbtn.Text = "Kustuta";
+            this.delbtn.UseVisualStyleBackColor = true;
+            this.delbtn.Click += new System.EventHandler(this.delbtn_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(35, 296);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(217, 132);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 13;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.delbtn);
+            this.Controls.Add(this.updatebtn);
             this.Controls.Add(this.addbtn);
             this.Controls.Add(this.filebox);
             this.Controls.Add(this.label5);
@@ -163,6 +201,7 @@
             this.Name = "Form1";
             this.Text = "DataBase";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -181,6 +220,9 @@
         private System.Windows.Forms.TextBox filebox;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button addbtn;
+        private System.Windows.Forms.Button updatebtn;
+        private System.Windows.Forms.Button delbtn;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
